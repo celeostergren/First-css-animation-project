@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  min-height: 100vh;
+  background: pink;
+}
+
+.invitation-card {
+  max-width: 700px;
+  
+  margin: auto;
+  background-color: beige;
+  align-items: center;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba( 0, 0, 0, 0.1)
+  
+}
+
+
+/* header section */
+
+.header h1 {
+  font-size: 3rem;
+  color: #fad02e;
+  margin: 0;
+  
+}
+.header h2 {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  
+}
+
+.circle {
+  width: 70px;
+  padding: 0;
+  display: block;
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 70px;
+  margin: 60px auto;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1s
+
+  
+}
+
+.circle:hover {
+  background: salmon;
+}
+
+
+.header h3 {
+  margin-right: 100px;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s infinite;
+  animation-duration: 1.5s;
+  
+}
+
+@keyframes fadeIn {
+  0%, 100% { opacity: 0;}
+  50% { opacity: 1;}
+}
+
+
+/*image section*/
+
+.picture1 {
+  width: 200px;
+  height: 400px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  animation: bobbing 3s ease-in-out infinite;
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Information section */
+
+.details {
+  margin-bottom: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: pink;
+}
+
+.street {
+  color: #fad02e;
+}
